@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Project-Travel/css/style.css">
+    <link rel="stylesheet" href="../Project-Travel/itc-slider.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Magra:regular,700,600" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Aleo:300,300italic,regular,italic,700,700italic" rel="stylesheet" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Travel</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container  events__none">
+                <a href="../Project-Travel/index.html" class="header__logo">
+                    <img src="../Project-Travel/img/icon-logo-01.svg" alt="logo">
+                    <div class="header__text mobile--none">
+                        <p>Travel Portal</p>
+                    </div>
+                </a>
+                <div class="header__menu">
+                    <nav class="header__menu-nav header__menu--none header__burger--open">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#works" class="header__link">How It Works</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#trip" class="header__link">Plan Your Trip</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#destinations" class="header__link">Destinations</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#stories" class="header__link">Travel Stories</a>
+                            </li>
+                            <li class="header__item burger__item">
+                                <a href="#account" class="header__link burger__link button__popup--login">Account</a>
+                            </li>
+                            <li class="header__item burger__item">
+                                <a href="#media" class="header__link burger__link">Social Media</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__button mobile--none">
+                    <button  class="button button--header button__popup--login" type="submit">Login</button>
+                </div>
+                <div class="header__memu-burger burger__icon">
+                    <span></span>
+                </div>
+<!--Header Popup-->
+                <div class="header__popup--bg header__popup--close">
+                    <div class="header__popup-container">
+                        <div class="header__popup--login header__popup--signup">
+                            <div class="popup__title popup__title--login">
+                                <h4>Log in to your account</h4>
+                            </div>
+                            <div class="popup__title popup__title--signup">
+                                <h4>Create account</h4>
+                            </div>
+                            <div class="header__popup--signin">
+                                <div class="header__popup--column popup--facebook">
+                                    <div class="header__popup--logo">
+                                        <img src="../Project-Travel/img/pop-up-logo-facebook.svg" alt="logo Facebook">
+                                    </div>
+                                    <div class="header-popup__subtitle">
+                                        <p>Sign In with Facebook</p>
+                                    </div>
+                                </div>
+                                <div class="header__popup--column popup--google">
+                                    <div class="header__popup--logo">
+                                        <img src="../Project-Travel/img/pop-up-logo-google.svg" alt="logo Google">
+                                    </div>
+                                    <div class="header-popup__subtitle">
+                                        <p>Sign In with Google</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__popup--line">
+                                <p>or</p>
+                            </div>
+                            <form action="/catalog" method="GET"  class="header-popup__form">
+                                <div class="header-form__container">
+                                    <label for="email"><p>E-mail</p></label>
+                                    <input type="text" name="email" required>
+                                    <label for="psw"><p>Password</p></label>
+                                    <input type="password"  name="psw" required>
+                                    <button type="submit" class="header-button__sign header-button__signin button">Sign In</button>
+                                    <button type="submit" class="header-button__sign header-button__signup button">Sign Up</button>
+                                </div>
+                                <div class="header__form--forgot">
+                                    <a href="#" onclick="alert('The Reset Password button is not available'); return false;">Forgot Your Password?</a>
+                                </div>
+                                <div class="header__form--account header-register__container">
+                                    <p>Don &#39;t have an account?&nbsp;<a href="#" class="popup__link">Register</a></p>
+                                </div>
+                                <div class="header__form--account header-login__container">
+                                    <p>Already have an account?&nbsp;<a href="#" class="popup__link--Login">Log in</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+<!--Header Popup-->
+            </div>
+        </header>
+        <main class="main">
+            <section class="section__preview section--margin" id="works">
+                <div class="section__container">
+                    <div class="section-preview__text mobile--none">
+                        <div class="section-preview__title">
+                            <h1>Explore the beauty of the World</h1>
+                        </div>
+                        <div class="section-preview__subtitle">
+                            <p>Receive personalized recommendations for countries, hotels, activities and more</p>
+                        </div>
+                    </div>
+                    <form class="section__search">
+                        <label class="section-search__group">
+                            <input class="section-search__input" name="query" placeholder="What would you like to do?" required>
+                        </label>
+                        <button class="button button--search">Start Planning</button>
+                    </form>
+                </div>
+                </section>
+            <section class="section__steps section--margin" id="trip">
+                <div class="section__title">
+                    <h2>3 steps to the perfect trip</h2>
+                </div>
+                <div class="steps__container">
+                    <div class="section-steps__items ">
+                        <div class="steps__item steps__item--left">
+                            <div class="steps-item__img">
+                                <img src="../Project-Travel/img/icon-bike.svg" alt="icon-bike">
+                            </div>
+                            <div class="steps-item__text">
+                                <p>Tell us what you want to do</p>
+                            </div>
+                        </div>
+                        <div class="steps__item steps__item--center">
+                            <div class="steps-item__img">
+                                <img src="../Project-Travel/img/icon-date.svg" alt="icon-date">
+                            </div>
+                            <div class="steps-item__text">
+                                <p>Share us preferable dates</p>
+                            </div>
+                        </div>
+                        <div class="steps__item  steps__item--right">
+                            <div class="steps-item__img">
+                                <img src="../Project-Travel/img/icon-air.svg" alt="icon-air">
+                            </div>
+                            <div class="steps-item__text">
+                                <p>We will give you recommendations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- Slider -->
+            <section class="section__destinations section--margin" id="destinations">
+                <div class="section__title section-destinations__title">
+                    <h2>Popular destinations</h2>
+                </div>
+                <div class="destinations__container">
+                    <div class="slide__container">
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1508189860359-777d945909ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                            <p>Stockholm, Sweden</p>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1569764101869-a4b14f8c447e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80" alt="">
+                            <p>Malmö, Sweden</p>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1613412347326-91f1d3767759?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                            <p>Copenhagen, Denmark</p>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1582633577976-4c08be68b0e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1383&q=80" alt="">
+                            <p>Sardinia, Italy</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- Slider -->
+            <section class="section__stories" id="stories">
+                <div class="section__title">
+                    <h2>Travel stories</h2>
+                </div>
+                <div class="stories__container" lang="zxx">
+                    <article class="section-stories__items">
+                        <div class="stories__item">
+                            <div class="stories__item--img">
+                                <img src="../Project-Travel/img/thailand.jpg" alt="Photo-Thailand">
+                            </div>
+                            <div class="stories__item--text">
+                                <h3>10 Photos of Attractive Thailand</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="stories__item">
+                            <div class="stories__item--img">
+                                <img src="../Project-Travel/img/utah.png" alt="Photo-Utah">
+                            </div>
+                            <div class="stories__item--text">
+                                <h3>Canyonlands National Park, Utah</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="stories__item">
+                            <div class="stories__item--img">
+                                <img src="../Project-Travel/img/mountains.jpg" alt="Photo-Mountains">
+                            </div>
+                            <div class="stories__item--text">
+                                <h3>I left my heart in the Mountains!</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="stories__item">
+                            <div class="stories__item--img">
+                                <img src="../Project-Travel/img/life.jpg" alt="Photo-road">
+                            </div>
+                            <div class="stories__item--text">
+                                <h3>The Longest journey in my life!</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="button__container">
+                            <button class="button button--stories">See More</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <ul class="footer-logo__list">
+                        <li class="footer-logo__link">
+                            <a href="https://github.com/alex-alexboo" target="_blank">
+                                <img src="../Project-Travel/img/github-icon.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__copyright">
+                    <p>All Rights Reserved &#169; Travel Portal</p>
+                </div>
+                <div class="footer__media">
+                    <ul class="footer-media__list"  id="media">
+                        <li class="footer-media__link">
+                            <a href="https://www.instagram.com/rsschool_news/" target="_blank">
+                                <img src="../Project-Travel/img/icons-instagram.svg" alt="logo-instagram">
+                            </a>
+                        </li>
+                        <li class="footer-media__link">
+                            <a href="https://www.youtube.com/c/RollingScopesSchool" target="_blank">
+                                <img src="../Project-Travel/img/icons-youtube.svg" alt="logo-youtube">
+                            </a>
+                        </li>
+                        <li class="footer-media__link">
+                            <a href="https://twitter.com/rollingscopes" target="_blank">
+                                <img src="../Project-Travel/img/icons-twitter.svg" alt="logo-twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="itc-slider.min.js"  defer></script>
+</body>
+</html>
